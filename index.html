@@ -2,11 +2,11 @@
 <script>
 function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/windows phone/i.test(userAgent)) alert("Windows Phone")
-    else if (/android/i.test(userAgent)) {
+    if (/android/i.test(userAgent)) 
        window.location='market://details?id=com.terriblytinytales.ttt'
-    }
-    else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {window.location='itms-apps:itunes.apple.com/app/terribly-tiny-tales/id1227454777'}
-    else alert("unknown OS"); 
+    else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) 
+        window.location='itms-apps:itunes.apple.com/app/terribly-tiny-tales/id1227454777'
+    else if (/windows phone/i.test(userAgent)) alert("Windows Phone ! Seriously?")
+    else alert("This is your regular website"); 
 }
 </script>
