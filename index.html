@@ -3,7 +3,7 @@
 function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/windows phone/i.test(userAgent)) alert("Windows Phone")
-    else if (/android/i.test(userAgent)) alert("Android")
+    else if (/android/i.test(userAgent)) {alert("Android");window.open('market://details?id=com.terriblytinytales.ttt')}
     else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) alert("iOS")
     else alert("unknown OS"); 
 }
