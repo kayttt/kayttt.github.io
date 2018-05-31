@@ -5,7 +5,6 @@ function getMobileOperatingSystem() {
     if (/windows phone/i.test(userAgent)) alert("Windows Phone")
     else if (/android/i.test(userAgent)) {
        window.location='market://details?id=com.terriblytinytales.ttt'
-//         window.location='https://play.google.com/store/apps/details?id=com.terriblytinytales.ttt'
     }
     else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {window.location='itms-apps:itunes.apple.com/app/terribly-tiny-tales/id1227454777'}
     else alert("unknown OS"); 
